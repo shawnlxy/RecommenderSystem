@@ -1,10 +1,15 @@
 # RecommenderSystem
-Description: This project implements Item Collaborative Filtering(Item CF) algorithm with mapreduce, which chains 5                      mapreduce jobs
-             Job 1 : Build co-occurrence matrix
-             Job 2 : Normalize co-occurrence matrix
-             Job 3 : Build rating matrix
-             Job 4 : Multiply co-occurrence matrix and rating matrix
-             Job 5 : Generate recommender list
+Description: This project implements Item Collaborative Filtering(Item CF) algorithm with mapreduce, which chains 5 mapreduce jobs.
+
+Job 1 : Build co-occurrence matrix
+
+Job 2 : Normalize co-occurrence matrix
+
+Job 3 : Build rating matrix
+
+Job 4 : Multiply co-occurrence matrix and rating matrix
+
+Job 5 : Generate recommender list
 
 Environment: Hadoop + Docker
 
