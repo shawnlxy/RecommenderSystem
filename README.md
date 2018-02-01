@@ -9,7 +9,7 @@ Job 3 : Build rating matrix
 
 Job 4 : Multiply co-occurrence matrix and rating matrix
 
-Job 5 : Generate recommender list
+Job 5 : Sum up multiplication for each user
 
 Environment: Hadoop + Docker
 
