@@ -13,17 +13,34 @@ Multiply co-occurrence matrix and rating matrix
 Sum up multiplication for each user
 
 ```
-Environment: Hadoop + Docker
+## Prerequisites 
+
+* [Docker](https://docs.docker.com/) - Container
+
+### How to build hadoop cluster on Docker
+
+```
+$ mkdir bigdata
+$ cd bigdata
+$ sudo docker pull joway/hadoop-cluster 
+$ git clone https://github.com/joway/hadoop-cluster-docker 
+$ sudo docker network create --driver=bridge hadoop 
+$ cd hadoop-cluster-docker
+
+$ sudo ./start-container.sh
+
+$ ./start-hadoop.sh
+```
 
 
-## Command Guide:
+## Get Started:
 
 ```
 enter hadoop
 
 cd src
 
-git clone https://github.com/shawnlxy/RecommenderSystem.git
+upload RecommenderSystem
 
 cd RecommenderSystem 
 
