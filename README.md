@@ -34,14 +34,21 @@ $ ./start-hadoop.sh
 
 
 ## Get Started:
+Download project:
+```
+$ cd ~/src
+$ git clone https://github.com/shawnlxy/RecommenderSystem.git
+```
+Enter hadoop:
+```
+$ cd hadoop-cluster-docker
+$ ./start-container.sh
+$ ./start-hadoop.sh
+$ cd src
+```
+HDFS operations:
 
 ```
-enter hadoop
-
-cd src
-
-upload RecommenderSystem
-
 cd RecommenderSystem 
 
 hdfs dfs -mkdir /input
