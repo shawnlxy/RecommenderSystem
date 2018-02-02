@@ -20,31 +20,31 @@ Sum up multiplication for each user
 ### How to build hadoop cluster on Docker
 
 ```
-$ mkdir bigdata
-$ cd bigdata
-$ sudo docker pull joway/hadoop-cluster 
-$ git clone https://github.com/joway/hadoop-cluster-docker 
-$ sudo docker network create --driver=bridge hadoop 
-$ cd hadoop-cluster-docker
+mkdir bigdata
+cd bigdata
+sudo docker pull joway/hadoop-cluster 
+git clone https://github.com/joway/hadoop-cluster-docker 
+sudo docker network create --driver=bridge hadoop 
+cd hadoop-cluster-docker
 
-$ sudo ./start-container.sh
+sudo ./start-container.sh
 
-$ ./start-hadoop.sh
+./start-hadoop.sh
 ```
 
 
 ## Get Started:
 Download project:
 ```
-$ cd ~/src
-$ git clone https://github.com/shawnlxy/RecommenderSystem.git
+cd ~/src
+git clone https://github.com/shawnlxy/RecommenderSystem.git
 ```
 Enter hadoop:
 ```
-$ cd hadoop-cluster-docker
-$ ./start-container.sh
-$ ./start-hadoop.sh
-$ cd src
+cd hadoop-cluster-docker
+./start-container.sh
+./start-hadoop.sh
+cd src
 ```
 HDFS operations:
 
@@ -85,8 +85,9 @@ hadoop jar recommender.jar Driver /input /dataDividedByUser /coOccurrenceMatrix 
 
 #args5: output directory for Sum job
 
-hdfs dfs -ls /
-
 hdfs dfs -cat /Sum/*
 
+hdfs dfs -ls / # if result is correct, you can see the following folders which contains corresponding outputs
+
 ```
+![screen shot 2018-02-02 at 2 42 28 am](https://user-images.githubusercontent.com/36029186/35722157-27fcabbc-07c3-11e8-94b9-6531820e66ca.png)
